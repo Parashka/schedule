@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User interface</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр таблицы</title>
+  <style>
+    table {
+      pointer-events: none; /* Запрет редактирования таблицы */
+      opacity: 0.5; /* Понижение прозрачности для отображения нередактируемости */
+    }
+  </style>
 </head>
 <body>
-
-    <table id="outputTable">
-        <tr>
-          <th>№ пары</th>
-          <th>Время</th>
-          <th>Предмет</th>
-          <th>Преподаватель</th>
-          <th>Аудитория-линк</th>
-        </tr>
-      </table>   
-      
-      <script src="assets/js/scriptForUserInterface.js"></script>
+  <table id="viewTable">
+    <!-- Здесь будет отображаться таблица из index.html -->
+  </table>
+  
+    <script src="assets/js/scriptForUserInterface.js"></script>
 
 </body>
 </html>
