@@ -1,3 +1,5 @@
+createSchedule.getElementById("createSchedule");
+
 function createScheduleTables() {
     var daysOfWeek = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница'];
     var container = document.getElementById('scheduleTablesContainer');
@@ -8,5 +10,6 @@ function createScheduleTables() {
       table.innerHTML = '<tr><th colspan="3">' + daysOfWeek[i] + '</th></tr><tr><th>Время</th><th>Предмет</th><th>Преподаватель</th></tr><tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>';
       
       container.appendChild(table);
+      createSchedule.disabled = true;
     }
   }
